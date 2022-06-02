@@ -1,6 +1,5 @@
 const config = {};
 
-
 config.dev = { 
     passwordLength: 2,
     defaultLanguage: 'en',
@@ -22,7 +21,10 @@ config.prod = {
 }
 
 const nodeEnv = process.env.NODE_ENV;
-const options = config.nodeEnv;
+const env = nodeEnv ? nodeEnv : 'dev';
+const options = config[env] ? config[env] : config.dev;
 
-console.log('kur dirba kodas?');
-console.log(process.env.NODE_ENV);
+// console.log('kur dirba kodas?');
+// console.log('ka parasiau terminale: ', nodeEnv);
+// console.log('kokia aplinka turesiu paleisti:', env);
+console.log(options);

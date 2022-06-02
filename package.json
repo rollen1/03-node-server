@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "obj": "nodemon ./js/object.js",
-    "spread": "nodemon ./js/spread.js",
+    "obj": "nodemon ./object.js",
+    "spread": "nodemon ./spread.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
