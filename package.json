@@ -8,12 +8,13 @@
     "dev": "nodemon",
     "obj": "nodemon ./object.js",
     "spread": "nodemon ./spread.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "rollen1",
   "license": "MIT",
   "devDependencies": {
+    "jest": "^28.1.1",
     "nodemon": "^2.0.16"
   }
 }
