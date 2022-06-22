@@ -8,7 +8,8 @@
     "dev": "nodemon",
     "obj": "nodemon ./object.js",
     "spread": "nodemon ./spread.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --passWithNoTests"
   },
   "keywords": [],
   "author": "rollen1",
